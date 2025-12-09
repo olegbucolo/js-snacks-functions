@@ -4,10 +4,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function initialsOfArray(arr){
+    let result = [];
+    for(let i = 0; i < arr.length; i++){
+        result.push(arr[i][0]);
+    }
+    return result;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(initialsOfArray(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
